@@ -66,7 +66,7 @@ export const VideoRenderer = ({
 
   const isFrontFacingOrUnknown = track.mediaStreamTrack?.getSettings().facingMode !== 'environment';
   if (isMirrored || (isMirrored === undefined && isLocal && isFrontFacingOrUnknown)) {
-    style.transform = 'rotateY(180deg)';
+    //style.transform = 'rotateY(180deg)';
   }
 
   if (objectFit) {
